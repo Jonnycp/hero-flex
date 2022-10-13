@@ -1,0 +1,10 @@
+:root{
+    /* Colors */
+    --light: #fff;
+    --dark: #000;
+
+    /* Spacings */
+    --externalPadding: 50px 0;
+    --internalPadding: 35px 0;
+    --linksGap: 65px;    
+}
