@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@700&display=swap');
 
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 :root{
     /* Colors */
     --light: #fff;
     --dark: #000;
 
     /* Spacings */
-    --externalPadding: 50px 0;
+    --externalPadding: 50px 80px;
     --internalPadding: 35px 0;
     --linksGap: 65px;
 
