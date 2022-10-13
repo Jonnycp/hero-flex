@@ -174,3 +174,15 @@ section button:hover{
     box-shadow: inset 10em 0 0 0 var(--primary);
     transition: 0.25s;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    cursor: pointer;
+}
+
+footer img:hover{
+    filter: invert(70%) sepia(49%) saturate(7027%) hue-rotate(331deg) brightness(102%) contrast(104%);
+}
