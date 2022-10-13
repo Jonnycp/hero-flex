@@ -111,6 +111,9 @@ nav ul a:hover{
   transform: rotate(-45deg);
 }
 
+.title{
+    margin: var(--internalPadding);
+}
 
 .title h1{
     font-family: var(--robotoMono);
@@ -138,3 +141,4 @@ nav ul a:hover{
     background: var(--light);
     margin: 0 auto;
 }
+
