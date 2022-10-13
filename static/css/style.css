@@ -162,4 +162,11 @@ section button {
     font-weight: bold;
 
     cursor: pointer;
+    user-select: none;
+}
+
+section button:hover{
+    color: var(--light);
+    box-shadow: inset 10em 0 0 0 var(--primary);
+    transition: 0.25s;
 }
