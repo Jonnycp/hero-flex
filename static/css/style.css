@@ -49,6 +49,7 @@ nav ul a:hover{
     position: relative;
 
     width: 55px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .menuToggle input{
@@ -97,7 +98,7 @@ nav ul a:hover{
 
 .menuToggle input:checked ~ span{
     opacity: 1;
-    transform: rotate(45deg) translate(6px, 6px) scale(0.5);
+    transform: rotate(45deg) translate(0, -2px);
 }
 
 .menuToggle input:checked ~ span:nth-last-child(2){
@@ -106,5 +107,5 @@ nav ul a:hover{
 }
 
 .menuToggle  input:checked ~ span:nth-last-child(1){
-  transform: rotate(-45deg) translate(0, -1px) scale(0.5);
+  transform: rotate(-45deg);
 }
