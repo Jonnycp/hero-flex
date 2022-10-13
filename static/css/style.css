@@ -142,3 +142,24 @@ nav ul a:hover{
     margin: 0 auto;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section button {
+    background: var(--light);
+    border: none;
+
+    padding: 20px 45px;
+    margin: 0 auto;
+
+    color: var(--dark);
+    font-family: var(--robotoMono);
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
