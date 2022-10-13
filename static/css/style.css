@@ -121,6 +121,10 @@ nav ul a:hover{
     padding: var(--internalPadding);
 }
 
+.title h1::selection{
+    background: var(--primary);
+}
+
 .title::after{
     content: "";
     display: block;
