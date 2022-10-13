@@ -21,6 +21,7 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul{
@@ -41,4 +42,69 @@ nav ul a{
 nav ul a:hover{
     color: var(--primary);
     text-decoration: underline;
+}
+
+.container .menuToggle{
+    user-select: none;
+    position: relative;
+
+    width: 55px;
+}
+
+.menuToggle input{
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menuToggle .hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menuToggle span{
+    display: block;
+    height: 2px;
+    background: var(--light);
+
+    position: relative;
+    margin-bottom: 10px;
+
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+.menuToggle span:first-child{
+    transform-origin: 0% 0%;
+    margin-bottom: 0px;
+}
+
+.menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+
+.menuToggle span:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
+.menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(6px, 6px) scale(0.5);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.1, 0.1);
+}
+
+.menuToggle  input:checked ~ span:nth-last-child(1){
+  transform: rotate(-45deg) translate(0, -1px) scale(0.5);
 }
