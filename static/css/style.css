@@ -110,3 +110,31 @@ nav ul a:hover{
 .menuToggle  input:checked ~ span:nth-last-child(1){
   transform: rotate(-45deg);
 }
+
+
+.title h1{
+    font-family: var(--robotoMono);
+    font-weight: bold;
+    font-size: 75px;
+    color: var(--light);
+    text-align: center;
+    padding: var(--internalPadding);
+}
+
+.title::after{
+    content: "";
+    display: block;
+    width: 83%;
+    height: 3px;
+    background: var(--light);
+    margin: 0 auto;
+}
+
+.title::before{
+    content: "";
+    display: block;
+    width: 83%;
+    height: 3px;
+    background: var(--light);
+    margin: 0 auto;
+}
