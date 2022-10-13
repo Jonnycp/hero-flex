@@ -37,3 +37,8 @@ nav ul a{
     line-height: 32px;
     font-weight: 400;
 }
+
+nav ul a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
